@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunter Stevens, Back-end Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js"
+      defer
+    ></script>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js"
+      defer
+    ></script>
+
+    <div class="relative bg-gray-50 overflow-hidden">
+      <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
+        <div class="relative h-full max-w-screen-xl mx-auto">
+          <svg
+            class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
+            width="404"
+            height="784"
+            fill="none"
+            viewBox="0 0 404 784"
+          >
+            <defs>
+              <pattern
+                id="svg-pattern-squares-1"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#svg-pattern-squares-1)" />
+          </svg>
+          <svg
+            class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
+            width="404"
+            height="784"
+            fill="none"
+            viewBox="0 0 404 784"
+          >
+            <defs>
+              <pattern
+                id="svg-pattern-squares-2"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#svg-pattern-squares-2)" />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        x-data="{ open: false }"
+        class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32"
+      >
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+          <nav
+            class="relative flex items-center justify-between sm:h-10 md:justify-center"
+          >
+            <div
+              class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+            >
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                 <!--Mobile Logo-->
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button
+                    @click="open = true"
+                    type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-gray-500 transition duration-150 ease-in-out"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="inline-flex items-baseline mr-8 px-3.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
+                Hablo Español
+              </div>
+              <a
+                href="#skills"
+                class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                >Skills</a
+              >
+              <a
+                href="#projects"
+                class="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                >Projects</a
+              >
+              <a
+                href="#contact"
+                class="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                >Contact</a
+              >
+              <a
+                href="#favorites"
+                class="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                >Favorites</a
+              >
+            </div>
+            
+            <div
+              class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
+            >
+              <span class="inline-flex rounded-md shadow">
+                <a
+                  href="assets/Hunter_Stevens.pdf"
+                  class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out"
+                  target="_blank"
+                  >
+                  Resume
+                </a>
+              </span>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          x-show="open"
+          style="display: none;"
+          class="absolute top-0 inset-x-0 p-2 md:hidden"
+        >
+          <div
+            class="rounded-lg shadow-md transition transform origin-top-right"
+            x-show="open"
+            x-transition:enter="duration-150 ease-out"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="duration-100 ease-in"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+          >
+            <div class="rounded-lg bg-white shadow-xs overflow-hidden">
+              <div class="px-5 pt-4 flex items-center justify-between">
+                <div>
+                  <img
+                    class="h-8 w-auto"
+                    src="/img/logos/workflow-mark-on-white.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="-mr-2">
+                  <button
+                    @click="open = false"
+                    type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-gray-500 transition duration-150 ease-in-out"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="px-2 pt-2 pb-3">
+                <a
+                  href="#skills"
+                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  >Skills</a
+                >
+                <a
+                  href="#projects"
+                  class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  >Projects</a
+                >
+                <a
+                  href="#contact"
+                  class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  >Contact</a
+                >
+                <a
+                  href="#favorites"
+                  class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  >Favorites</a
+                >
+              </div>
+              <div>
+                <a
+                  href="assets/Hunter_Stevens.pdf"
+                  class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-200 hover:text-indigo-700 focus:outline-none focus:bg-gray-200 focus:text-indigo-700 transition duration-150 ease-in-out"
+                  target="_blank"
+                  >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28"
+        >
+          <div class="text-center">
+            <div class="mx-auto">
+              <img class="h-48 w-48 rounded-full xl:h-80 xl:w-80 mx-auto" src="assets/headshot.jpg" alt="" />
+            </div>
+            <h2
+              class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
+            >
+              Hunter Stevens
+              <br class="xl:hidden" />
+              <br />
+              <span class="text-indigo-600">Back-end Developer</span>
+            </h2>
+            <p
+              class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+            >
+              Hello, I'm Hunter! I am 29 years old from The Woodlands, Texas (Suburb of Houston).
+              <br>
+              Attending: Launch School (Mastery-based Learning)
+              <br>
+              Currently Building: AirMailer.io
+            </p>
+            
+            <div
+              class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8"
+            >
+              <div class="rounded-md shadow">
+                <a
+                  href="assets/Hunter_Stevens.pdf"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  target="_blank"
+                  >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-200">
+      <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <p
+          id="skills"
+          class="text-center text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          Skills
+        </p>
+        <div class="pb-6-6 bg-gray-200>
+          <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+              <div>
+                <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                  <img
+                  class="h-8 w-auto sm:h-10"
+                  src="assets/ruby.png"
+                />
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-lg leading-6 font-medium text-gray-900">Ruby</h5>
+                  <p class="mt-2 text-base leading-6 text-gray-500">
+                    I love Ruby, it comes as advertised.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10 lg:mt-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                  <img
+                  class="h-6 w-16"
+                  src="assets/rails.png"
+                />
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-lg leading-6 font-medium text-gray-900">Rails</h5>
+                  <p class="mt-2 text-base leading-6 text-gray-500">
+                    Good working understanding of the Rail architecture.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10 lg:mt-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                  <img
+                  class="h-8 w-auto sm:h-10"
+                  src="assets/heroku.png"
+                />
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-lg leading-6 font-medium text-gray-900">Heroku</h5>
+                  <p class="mt-2 text-base leading-6 text-gray-500">
+                    Great development speed. I'm a fan, but would like to expand my knowledge to GCP or AWS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="pb-6 bg-gray-200">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+          <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                <img
+                class="h-8 w-auto sm:h-10"
+                src="assets/html.png"
+              />
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-gray-900">HTML</h5>
+                <p class="mt-2 text-base leading-6 text-gray-500">
+                  Working understanding.
+                </p>
+              </div>
+            </div>
+            <div class="my-10 lg:mt-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                <img
+                class="h-full w-8"
+                src="assets/css.png"
+              />
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-gray-900">CSS</h5>
+                <p class="mt-2 text-base leading-6 text-gray-500">
+                  Working understanding.
+                </p>
+              </div>
+            </div>
+            <div class="mt-10 lg:mt-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                <img
+                class="h-8 w-auto sm:h-10"
+                src="assets/tailwind.png"
+              />
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-gray-900">Tailwind CSS</h5>
+                <p class="mt-2 text-base leading-6 text-gray-500">
+                  CSS of choice, it's a dream to work with.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="absolute inset-0">
+        <div class="bg-white h-1/3 sm:h-2/3"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto">
+        <div id="projects" class="text-center">
+          <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+            Projects
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
+            <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed. -->
+          </p>
+        </div>
+        <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover" src="assets/example-sh.png" alt="" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-indigo-600">
+                  <a href="#" class="hover:underline">
+                    Education
+                  </a>
+                </p>
+                <a href="#" class="block">
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                    Spanish Hero
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-500">
+                    Spanish Hero is a series of tools to help people learn Spanish. All within a world that inspires. 
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm leading-5 font-medium text-gray-900">
+                    <a href="#" class="hover:underline">
+                    Rails | Alpine.js | Tailwind CSS
+                    </a>
+                  </p>
+                  <div class="flex text-sm leading-5 text-gray-500">
+                    <time datetime="2020-03-16">
+               
+                    </time>
+                    <span class="mx-1">
+                      &middot;
+                    </span>
+                    <span>
+        
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover" src="assets/coming-soon.jpg" alt="" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-indigo-600">
+                  <a href="#" class="hover:underline"> Data</a>
+                </p>
+                <a href="#" class="block">
+                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                    AirMailer.io
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-500">
+                    AirMailer.io is direct mail discovery platform focused on geographic granularity.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm leading-5 font-medium text-gray-900">
+                    <a href="#" class="hover:underline">
+                      Rails API
+                    </a>
+                  </p>
+                  <div class="flex text-sm leading-5 text-gray-500">
+                    <time datetime="2020-03-16">
+                    </time>
+                    <span class="mx-1">
+                      &middot;
+                    </span>
+                    <span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+   
+
+    <div id=contact class="bg-gray-200">
+      <div class="pt-12 sm:pt-16 lg:pt-20">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
+              Contact
+            </h2>
+            <p class="mt-4 text-xl leading-7 text-gray-500">
+     
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 bg-gray-200 pb-16 sm:mt-12 sm:pb-20 lg:pb-28">
+        <div class="relative">
+          <div class="absolute  h-1/2 bg-gray-200"></div>
+          <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-lg mx-auto rounded-lg shadow-lg">
+              <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12">
+                <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
+                  Please feel free to reach out!
+                </h3>
+                <p class="mt-6 text-base leading-6 text-gray-500">
+                  Email: hunter@topbster.io | Phone: +1 619-686-9740
+                </p>
+                <div class="mt-8">
+                  <div class="flex items-center">
+                    <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                      Available for:
+                    </h4>
+                    <div class="flex-1 border-t-2 border-gray-200"></div>
+                  </div>
+                  <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+                    <li class="flex items-start lg:col-span-1">
+                      <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                      </div>
+                      <p class="ml-3 text-sm leading-5 text-gray-700">
+                        Part-Time Positions
+                      </p>
+                    </li>
+                    <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                      <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                      </div>
+                      <p class="ml-3 text-sm leading-5 text-gray-700">
+                        Contract Positions
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="favorites" class="bg-gray-50" x-data="{ openPanel: 1 }">
+      <div class="max-w-screen-xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-center text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
+          >
+            Favorites
+          </h2>
+          <div class="mt-6 border-t-2 border-gray-200 pt-6">
+            <dl>
+              <div>
+                <dt class="text-lg leading-7">
+                  <button
+                    @click="openPanel = (openPanel === 1 ? null : 1)"
+                    class="text-left w-full flex justify-between items-start text-gray-400 focus:outline-none focus:text-gray-900"
+                  >
+                    <span class="font-medium text-gray-900">
+                      Favorite Books
+                    </span>
+                    <span class="ml-6 h-7 flex items-center">
+                      <svg
+                        class="h-6 w-6 transform"
+                        :class="{ '-rotate-180': openPanel === 1 }"
+                        stroke="currentColor"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" x-show="openPanel === 1">
+                  <p class="text-base leading-6 text-gray-500">
+                  1. 12 Rules for Life, Jordan B. Peterson
+                  <br>
+                  2. The Hard Thing About Hard Things, Ben Horowitz
+                  <br>
+                  3. Zero to One, Peter Thiel
+                  <br>
+                  4. Rework, Jason Fried + David Heinemeier Hanson
+                  <br>
+                  5. Delivering Happiness, Tony Hsieh
+                  <br>
+                  6. The Launch Pad: Inside Y Combinator, Randal Stross
+                  <br>
+                  7. Remote, Jason Fried + David Heinemeier Hanson
+                  <br>
+                  8. Shoe Dog, Phil Knight
+                  <br>
+                  9. Crazy Love, Francis Chan
+                  <br>
+                  10. Tocqueville and the American Experiment, William R. Cook
+                  <br>
+                  11. Extreme Ownership, Jacko Wilink + Leif Babin
+                  <br>
+                  12. Outliers, Malcom Gladwell
+                  <br>
+                  13. David and Goliath, Malcom Gladwell
+                  <br>
+                  14. Things That Matter, Charles Krauthammer
+                  <br>
+                  15. 10x Rule, Grant Cardone
+                </p>
+                </dd>
+              </div>
+              <div class="mt-6 border-t border-gray-200 pt-6">
+                <div>
+                  <dt class="text-lg leading-7">
+                    <button
+                      @click="openPanel = (openPanel === 2 ? null : 2)"
+                      class="text-left w-full flex justify-between items-start text-gray-400 focus:outline-none focus:text-gray-900"
+                    >
+                      <span class="font-medium text-gray-900">
+                        Favorite Movies
+                      </span>
+                      <span class="ml-6 h-7 flex items-center">
+                        <svg
+                          class="h-6 w-6 transform"
+                          :class="{ '-rotate-180': openPanel === 2 }"
+                          stroke="currentColor"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-2 pr-12" x-show="openPanel === 2">
+                    <p class="text-base leading-6 text-gray-500">
+                      1. You've Got Mail
+                      <br>
+                      2. Intersteller
+                      <br>
+                      3. Blood Diamond
+                      <br>
+                      4. Angels in the Outfield
+                      <br>
+                      5. Lord of the Rings (Trilogy)
+                      <br>
+                      6. Gangs of New York
+                      <br>
+                      7. 100 Foot Journey
+                      <br>
+                      8. The Matrix
+                      <br>
+                      9. The Shawshank Redemption
+                      <br>
+                      10. Catch Me If You Can
+                    </p>
+                  </dd>
+                </div>
+              </div>
+              <div class="mt-6 border-t border-gray-200 pt-6">
+                <div>
+                  <dt class="text-lg leading-7">
+                    <button
+                      @click="openPanel = (openPanel === 3 ? null : 3)"
+                      class="text-left w-full flex justify-between items-start text-gray-400 focus:outline-none focus:text-gray-900"
+                    >
+                      <span class="font-medium text-gray-900">
+                        Favorite TV Shows
+                      </span>
+                      <span class="ml-6 h-7 flex items-center">
+                        <svg
+                          class="h-6 w-6 transform"
+                          :class="{ '-rotate-180': openPanel === 3 }"
+                          stroke="currentColor"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-2 pr-12" x-show="openPanel === 3">
+                    <p class="text-base leading-6 text-gray-500">
+                      1. Suits
+                      <br>
+                      2. That 70's Show
+                      <br>
+                      3. Body Gaurd
+                      <br>
+                      4. Line of Duty
+                      <br>
+                      5. Dexter
+                      <br>
+                      6. Cheers
+                      <br>
+                      7. Yu Yu Hakusho
+                      <br>
+                      8. True Detective
+                      <br>
+                      9. Fargo
+                      <br>
+                      10. Lost
+                    </p>
+                  </dd>
+                </div>
+              </div>
+              <div class="mt-6 border-t border-gray-200 pt-6">
+                <div>
+                  <dt class="text-lg leading-7">
+                    <button
+                      @click="openPanel = (openPanel === 4 ? null : 4)"
+                      class="text-left w-full flex justify-between items-start text-gray-400 focus:outline-none focus:text-gray-900"
+                    >
+                      <span class="font-medium text-gray-900">
+                        Favorite Places on Earth
+                      </span>
+                      <span class="ml-6 h-7 flex items-center">
+                        <svg
+                          class="h-6 w-6 transform"
+                          :class="{ '-rotate-180': openPanel === 4 }"
+                          stroke="currentColor"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-2 pr-12" x-show="openPanel === 4">
+                    <p class="text-base leading-6 text-gray-500">
+                      1. The Woodlands, Texas (I'm a hometown kind of guy)
+                      <br>
+                      2. Medellín, Colombia (Lived here for 2 1/2 years, so I'm basically a Paisa)
+                      <br>
+                      3. Denver, Colorado (Lived here for a year, Rocky Mountain Air)
+                      <br>
+                      4. Papagayo, Costa Rica (Great Family Memories)
+                      <br>
+                      5. Rome, Italy (If Rome can fall, nothing is forever.)
+                      <br>
+                      6. Maui, Hawaii (Never been more relaxed)
+                      <br>
+                      7. Nassau, Bahamas (More Fond Family Memories)
+                      <br>
+                      8. Cusco, Peru (Enchanting, maybe the history, but something is special)
+                      <br>
+                      9. Lima, Perú (Cheviche)
+                      <br>
+                      10. Florence, Italy (Refreshing taste of craftsmenship)
+                      <br>
+                      11. San Pedro de Atacama (Surreal Landscapes)
+                      <br>
+                      12. Kauai, Hawaii (Classic Family Memories)
+                      <br>
+                      13. Grand Cayman, Islands (Islands are easy to love)
+                      <br>
+                      14. Lübbecke, Germany (My first taste of Europe)
+                      <br>
+                      15. San Pedro de Los Milagros, Colombia (Considered the Switzerland of Colombia)
+                    </p>
+                  </dd>
+                </div>
+              </div>
+              <div class="mt-6 border-t border-gray-200 pt-6">
+                <div>
+                  <dt class="text-lg leading-7">
+                    <button
+                      @click="openPanel = (openPanel === 5 ? null : 5)"
+                      class="text-left w-full flex justify-between items-start text-gray-400 focus:outline-none focus:text-gray-900"
+                    >
+                      <span class="font-medium text-gray-900">
+                        G.O.A.T (basketball)
+                      </span>
+                      <span class="ml-6 h-7 flex items-center">
+                        <svg
+                          class="h-6 w-6 transform"
+                          :class="{ '-rotate-180': openPanel === 5 }"
+                          stroke="currentColor"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-2 pr-12" x-show="openPanel === 5">
+                    <p class="text-base leading-6 text-gray-500">
+                      Jordan.
+                    </p>
+                  </dd>
+                </div>
+              </div>
+  
+    <div class="w-full">
+    </div>
+    <div class="bg-white">
+      <div
+        class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+      >
+        <div class="flex justify-center md:order-2">
+          <!-- <a
+            href="https://www.instagram.com/diamondalltheway/"
+            class="ml-6 text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a> -->
+          <!-- <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a> -->
+          <a
+            href="https://github.com/diamondalltheway"
+            class="ml-6 text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-center text-base leading-6 text-gray-400">
+            &copy; 2020 Hunter Stevens All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
